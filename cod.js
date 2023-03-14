@@ -83,19 +83,59 @@ function turn_off() {
 	
 }
 function review(){
-	let name = document.getElementById("input_name").vaule;
-	let wish = document.getElementById("input_wish").vaule;
+
+	let name = document.getElementById("input_name").value;
+
+	let wish = document.getElementById("input_wish").value;
+
 	alert("Здравствуйте, "+name.value+", мы подумаем над тем, чтобы добавить сериал '"+wish.value+"' на наш сайт:).\n\nСпасибо большое за ваш отзыв <3")
-	if (name == none|| name==" ")
-	{
-		document.getElementById("sp").innerHTML="У вас не введено имя.Пожалуйста заполните его"
-	}
-	if (wish == none || wish==" ")
-	{
-		document.getElementById("sp").innerHTML="У вас не введен сериал.Пожалуйста заполните это поле"
-	}
+	if (name == false)
+
+		{
+
+			document.getElementById("sp").innerHTML="<span id='sp'>!У вас не введено имя. Пожалуйста заполните его !</span>"
+
+		}
+
+
+	if (wish == false)
+
+		{
+
+			document.getElementById("sp").innerHTML="<span id='sp'>!У вас не введен сериал. Пожалуйста заполните это поле!</span>"
+
+		}
+
+	if (wish == false && name == false)
+
+		{
+
+			document.getElementById("sp").innerHTML="<span id='sp'>!У вас не введены имя и сериал. Пожалуйста заполните эти поля!</span>"
+
+		}
 	
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
