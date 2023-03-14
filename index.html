@@ -4,9 +4,9 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>TV CEReALS</title>
-		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="stylesheet" type="text/css" href="сериалы_главная.css">
 		<link rel="shortcut icon" href="milk.ico" type="image/x-icon">
-		<script src="cod.js"></script>
+		<script src="модальное окно.js"></script>
 	</head>
 	<body id="all">
 		<label class="switch">
@@ -148,19 +148,19 @@
 					<legend>Обратная связь</legend>
 					<label>
 						Введите своё имя:
-						<input required id="input_name" type="text">
+						<input id="input_name" type="text" class="input_text" required >
 					</label><br>
 					<label>
 						Введите сериал, который вы бы хотели видеть на этом сайте:
-						<input required id="input_wish" type="text" >
+						<input id="input_wish" type="text"  class="input_wish" required>
 					</label>
 					<br>
 					<label>
 						Введите отзыв:
 						 <textarea></textarea>
 					</label>
-					<button id="valid" onclick="review()">Отправить</button>
-					<span id="sp"></span>
+					<button type='button'  id="valid" onclick= review()>Отправить</button><br>
+					<span class="erro" id="sp"></span>
 				</fieldset>
 			</form>
 		</center>
@@ -173,6 +173,27 @@
 		</footer>
 	</body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
