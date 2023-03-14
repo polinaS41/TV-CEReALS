@@ -135,12 +135,12 @@ footer img{
 	margin: 10% 10% 10% 15% ;
 
 }
-span{
+ div span{
 	font-size: 40px;
 	color: white;
 	float: right;
 }
-span:hover{
+div span:hover{
 	cursor: pointer;
 	color: red;
 }
@@ -225,6 +225,23 @@ input{
 button{
 	float: right;
 }
+.erro{
+	font-size: 20px;
+	color: red;
+	font-family: sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
